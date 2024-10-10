@@ -99,7 +99,7 @@
            </div>
 
 
-         <div>
+         <div id="log-out">
              <img src="assets/logout.png" alt="">
              <p>Log Out</p>
              
@@ -136,10 +136,10 @@
                             <h4>Pick-Up</h4>
                         </div>
                     
-                            <form>
+                            <form >
 
                                 <div class="form-group">
-                                    <label for="pickup-location">Locations:</label>
+                                    <label for="pickup-location"><h3>Locations:</h3></label>
                                     <select id="pickup-location" name="pickup-location">
                                         <option value="M'saken">M'saken</option>
                                         <option value="Sousse">Sousse</option>
@@ -152,12 +152,12 @@
                                 
                                 <div class="form-group">
 
-                                        <label for="pickup-date">Pick-Up Date:</label>
+                                        <label for="pickup-date"> <h3>Date:</h3></label>
                                         <input type="date" id="pickup-date" name="pickup-date">
                                 </div>
                                 
                                 <div class="form-group">
-                                    <label for="pickup-time">Pick-Up Time:</label>
+                                    <label for="pickup-time"><h3>Time:</h3></label>
                                         <select id="pickup-time" name="pickup-time">
                                             <option value="08:00">08:00 AM</option>
                                             <option value="09:00">09:00 AM</option>
@@ -174,8 +174,7 @@
                                             <option value="20:00">08:00 PM</option>
                                         </select>
                                 </div>
-                                
-                    
+                            </form>                    
                     </div>
 
 
@@ -186,43 +185,45 @@
                             <h4>Drop-Off</h4>
                         </div>
                         
-                        
-                        <div class="form-group">
-                            <label for="dropoff-location">Locations:</label>
-                            <select id="dropoff-location" name="dropoff-location">
-                                <option value="airport">M'saken</option>
-                                <option value="downtown">Sousse</option>
-                            </select>
-                        </div>
-                       
+                        <form  id="drop-off">
 
-                    
-                        <div class="form-group">
-                            <label for="dropoff-date">Drop-Off Date:</label>
-                            <input type="date" id="dropoff-date" name="dropoff-date">
-                        </div>
-                        
+                                    
+                                    <div class="form-group">
+                                        <label for="dropoff-location"><h3>Locations:</h3></label>
+                                        <select id="dropoff-location" name="dropoff-location">
+                                            <option value="airport">M'saken</option>
+                                            <option value="downtown">Sousse</option>
+                                        </select>
+                                    </div>
+                                
 
-                        
-                        <div class="form-group">
-                            <label for="dropoff-time">Drop-Off Time:</label>
-                            <select id="dropoff-time" name="dropoff-time">
-                                <option value="08:00">08:00 AM</option>
-                                <option value="09:00">09:00 AM</option>
-                                <option value="10:00">10:00 AM</option>
-                                <option value="11:00">11:00 AM</option>
-                                <option value="12:00">12:00 PM</option>
-                                <option value="13:00">01:00 PM</option>
-                                <option value="14:00">02:00 PM</option>
-                                <option value="15:00">03:00 PM</option>
-                                <option value="16:00">04:00 PM</option>
-                                <option value="17:00">05:00 PM</option>
-                                <option value="18:00">06:00 PM</option>
-                                <option value="19:00">07:00 PM</option>
-                                <option value="20:00">08:00 PM</option>
-                            </select>
-                        </div>
-                        
+                                
+                                    <div class="form-group">
+                                        <label for="dropoff-date"><h3>Date:</h3></label>
+                                        <input type="date" id="dropoff-date" name="dropoff-date">
+                                    </div>
+                                    
+
+                                    
+                                    <div class="form-group">
+                                        <label for="dropoff-time"><h3>Time:</h3></label>
+                                        <select id="dropoff-time" name="dropoff-time">
+                                            <option value="08:00">08:00 AM</option>
+                                            <option value="09:00">09:00 AM</option>
+                                            <option value="10:00">10:00 AM</option>
+                                            <option value="11:00">11:00 AM</option>
+                                            <option value="12:00">12:00 PM</option>
+                                            <option value="13:00">01:00 PM</option>
+                                            <option value="14:00">02:00 PM</option>
+                                            <option value="15:00">03:00 PM</option>
+                                            <option value="16:00">04:00 PM</option>
+                                            <option value="17:00">05:00 PM</option>
+                                            <option value="18:00">06:00 PM</option>
+                                            <option value="19:00">07:00 PM</option>
+                                            <option value="20:00">08:00 PM</option>
+                                        </select>
+                                    </div>
+                       </form> 
                     </div>
 
                 </div>
@@ -305,8 +306,8 @@
 
                         </div>
                         <div class="cars-recent-transactions">
-                            <div class="car-1">
-                                <div class="image-container">
+                            <div class="car-1" >
+                                <div class="image-container" id="car-1">
                                     <img src="assets/voiture-1.png" alt="">
                                     <div class="text-container">
                                         <p>Nissan GT - R</p>
@@ -324,8 +325,8 @@
 
 
 
-                            <div class="car-2">
-                                <div class="image-container">
+                            <div class="car-1" >
+                                <div class="image-container" id="car-1">
                                     <img src="assets/voiture-2.png" alt="">
                                     <div class="text-container">
                                         <p>Koegnigsegg</p>
@@ -341,9 +342,9 @@
 
                             </div>
 
-                            <div class="car-3">
-                                <div class="image-container">
-                                    <img src="assets/voiture-2.png" alt="">
+                            <div class="car-1" >
+                                <div class="image-container" id="car-1">
+                                    <img src="assets/voiture-3.png" alt="">
                                     <div class="text-container">
                                         <p>Rolls - Royce</p>
                                         <p>Sport Car</p>
@@ -359,9 +360,9 @@
                             </div>
 
 
-                            <div class="car-4">
-                                <div class="image-container">
-                                    <img src="assets/voiture-2.png" alt="">
+                            <div class="car-1" id=>
+                                <div class="image-container" id="car-1">
+                                    <img src="assets/voiture-4.png" alt="">
                                     <div class="text-container">
                                         <p>CR - V</p>
                                         <p>Sport Car</p>

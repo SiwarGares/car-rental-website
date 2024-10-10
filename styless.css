@@ -4,13 +4,13 @@
 :root
 {
     --primary-background-color-white : #ffffff;
-    --primary-background-color-white :##F6F7F9;
+    --primary-background-color-gray :#F6F7F9;
     --primary-border-color : #E8EFF6;
     --primary-blue-color : #3563E9;
     --primary-blue-color-2: #3D5278;
     --primary-blue-color-secondary: #90A3BF;
 
-
+   
 
     
 }
@@ -53,10 +53,10 @@ header .navigation .search
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
     border: solid var(--primary-border-color);
     border-radius: 1rem;
-    padding: 0.5rem;
+    padding: 0.5rem 5rem;
 }
 
 header .navigation .icons
@@ -96,6 +96,11 @@ header .navigation .icons
 
 }
 
+#log-out
+{
+    margin-top: 8rem;
+}
+
 .main .sidebar p
 {
     margin-bottom: 1.5rem;
@@ -114,8 +119,9 @@ header .navigation .icons
 .main .content
 {
     display: flex;
-    align-items: center;
-    justify-content: center;
+/*     align-items: center;
+ */    justify-content: center;
+ background-color: var(--primary-background-color-gray);
 
 /*     width: 80%;
  */}
@@ -126,7 +132,9 @@ header .navigation .icons
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
+/*     justify-content: center;
+ */    background-color: var(--primary-background-color-white);
+ margin: 1rem;
 }
 
 .main .content .card-1 .maps
@@ -157,6 +165,13 @@ header .navigation .icons
     align-items: start;
     gap: 1rem;
 }
+.main .content .card-1 .rent-details .pick-up
+{
+  display: flex;
+    flex-direction: column;
+    gap: 1rem;  
+}
+
 
 .main .content .card-1 .rent-details .pick-up .pick-up-title
 {
@@ -173,8 +188,10 @@ header .navigation .icons
     display: flex;
     justify-content: start;
     align-items: start;
-    gap: 1rem;
+    gap: 2rem;
 }
+
+
 /* .main .content .card-1 .rent-details .pick-up  form label:first-of-type {
     display: flex;
     flex-direction: column;
@@ -201,6 +218,7 @@ header .navigation .icons
     display: flex;
     flex-direction: column; 
     margin-bottom: 1rem; 
+    gap: 0.8rem;
 }
 
 
@@ -224,10 +242,11 @@ header .navigation .icons
  */
 
 .main .content .card-1 .rent-details .drop-off {
-    display: flex;
+        display: flex;
+    flex-direction: column;
     justify-content: start;
-    align-items: flex-start; /* Align the blocks at the top */
-    gap: 2rem; /* Space between each block */
+    align-items: flex-start;
+    gap: 1rem;
 }
 
 .main .content .card-1 .rent-details .drop-off .form-group {
@@ -235,8 +254,13 @@ header .navigation .icons
     flex-direction: column; /* Keep the label and select/input vertical */
     margin-bottom: 0; /* Remove bottom margin if needed */
 }
-
-
+#drop-off
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
 .main .content .card-1 .rental-price
 {
     display: flex;
@@ -245,6 +269,19 @@ header .navigation .icons
     gap: 4rem;
     margin-top: 2rem;
 }
+
+.main .content .card-1 .rental-price .text-container
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.main .content .card-1 .rental-price .text-container p
+{
+    color: var(--primary-blue-color-secondary);
+}
+
 
 hr
 {
@@ -256,7 +293,10 @@ hr
     display: flex;
      flex-direction: column;
     align-items: center;
-    justify-content: center;
+/*     justify-content: center;
+ */    background-color: var(--primary-background-color-white);
+    /* margin-left: 3rem; */
+    margin: 1rem
    
 }
 
@@ -266,6 +306,8 @@ hr
       justify-content: center;
     align-items: center;
     gap: 2rem;
+    background-color: var(--primary-background-color-white);
+    margin: 1rem;
   
    
 }
@@ -295,15 +337,18 @@ hr
    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--primary-background-color-white);
+    margin-top: 2rem;
+
 }
 
 .main .content .card-2 .Recent-Transaction .title-container
 {
     display: flex; 
-     justify-content: center;
+     justify-content: space-around;
      align-items: center;
-     margin-top: 3rem;
-     gap: 4rem;
+     margin-top: 1rem;
+     gap: 10rem;
 }
 
 .main .content .card-2  .Recent-Transaction .cars-recent-transactions
@@ -314,12 +359,26 @@ hr
     align-items: center;
 }
 
-.main .content .card-2  .Recent-Transaction .cars-recent-transactions .car-1 .image.container ,.main .content .card-2  .Recent-Transaction .cars-recent-transactions .car-2 .image.container .main .content .card-2  .Recent-Transaction .cars-recent-transactions .car-3 .image.container,.main .content .card-2  .Recent-Transaction .cars-recent-transactions .car-4 .image.container .main .content .card-2  .Recent-Transaction .cars-recent-transactions .car-5 .image.container
+/* .main .content .card-2  .Recent-Transaction .cars-recent-transactions .car-1 .image.container 
 {
     display: flex; 
     justify-content: center;
     align-items: center;
     gap: 5rem;
+} */
+
+#car-1 
+{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 1rem;
+
 }
 
+#car-1  .text-container :last-child ,#car-1  .car-price :last-child
+{
+    color: var(--primary-blue-color-secondary);
+}
 
