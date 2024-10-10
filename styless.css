@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+:root
+{
+    --primary-background-color-white : #ffffff;
+    --primary-background-color-white :##F6F7F9;
+    --primary-border-color : #E8EFF6;
+    --primary-blue-color : #3563E9;
+    --primary-blue-color-2: #3D5278;
+    --primary-blue-color-secondary: #90A3BF;
+
+
+
+    
+}
+
+*
+{
+    font-family:"Plus Jakarta Sans";
+    margin: 0;
+    padding: 0;
+    transition: 0.8s ease;
+    box-sizing: border-box;
+
+}
+
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding :1rem 4rem; 
+    margin: 1rem;
+    background-color: var(--primary-background-color-white);
+    
+}
+header .logo
+{
+    color: var(--primary-blue-color);
+}
+
+header .navigation 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20rem;
+}
+header .navigation .search
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: solid var(--primary-border-color);
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+header .navigation .icons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* .main 
+{
+    margin-top: 3rem;
+} */
+.main 
+{
+    display: flex;
+}
+.main .sidebar
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 20%;
+    padding-left: 1rem;
+    color: var(--primary-blue-color-secondary);
+}
+
+.main .sidebar >div
+{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+}
+
+.main .sidebar p
+{
+    margin-bottom: 1.5rem;
+}
+
+.main .sidebar button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-blue-color);
+    padding: 0.5rem;
+}
+
+
+.main .content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+/*     width: 80%;
+ */}
+
+
+.main .content .card-1
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.main .content .card-1 .maps
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.main .content .card-1 .car-name
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    
+    gap: 4rem;
+}
+
+.main .content .card-1 .rent-details
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+}
+
+.main .content .card-1 .rent-details .pick-up .pick-up-title
+{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+
+.main .content .card-1 .rent-details .pick-up form
+{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+}
+/* .main .content .card-1 .rent-details .pick-up  form label:first-of-type {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.main .content .card-1 .rent-details .pick-up form label:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main .content .card-1 .rent-details .pick-up form label:nth-of-type(3) 
+{
+    display: flex;
+    flex-direction: column;
+}
+ */
+
+
+ .form-group
+  {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 1rem; 
+}
+
+
+
+.main .content .card-1 .rent-details .drop-off .drop-off-title
+{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+}
+
+
+/* 
+.main .content .card-1 .rent-details .drop-off 
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+ */
+
+.main .content .card-1 .rent-details .drop-off {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start; /* Align the blocks at the top */
+    gap: 2rem; /* Space between each block */
+}
+
+.main .content .card-1 .rent-details .drop-off .form-group {
+    display: flex;
+    flex-direction: column; /* Keep the label and select/input vertical */
+    margin-bottom: 0; /* Remove bottom margin if needed */
+}
+
+
+.main .content .card-1 .rental-price
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+hr
+{
+    width: 5rem;
+}
+
+.main .content .card-2
+{
+    display: flex;
+     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.main .content .card-2 .chart-container
+{
+    display: flex;
+      justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  
+   
+}
+.main .content .card-2 .chart-container .title-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.main .content .card-2 .chart-container .chart-details .cars-types .type-1,.main .content .card-2 .chart-container .chart-details .cars-types .type-2 ,.main .content .card-2 .chart-container .chart-details .cars-types .type-3 ,.main .content .card-2 .chart-container .chart-details .cars-types .type-4 ,.main .content .card-2 .chart-container .chart-details .cars-types .type-5,.main .content .card-2 .chart-container .chart-details .cars-types .type-5
+{
+    display: flex;
+      justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 1rem;
+  
+   
+}
+
+.main .content .card-2  .Recent-Transaction
+{
+    display: flex; 
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .content .card-2 .Recent-Transaction .title-container
+{
+    display: flex; 
+     justify-content: center;
+     align-items: center;
+     margin-top: 3rem;
+     gap: 4rem;
+}
+
+.main .content .card-2  .Recent-Transaction .cars-recent-transactions
+{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .content .card-2  .Recent-Transaction .cars-recent-transactions .car-1 .image.container ,.main .content .card-2  .Recent-Transaction .cars-recent-transactions .car-2 .image.container .main .content .card-2  .Recent-Transaction .cars-recent-transactions .car-3 .image.container,.main .content .card-2  .Recent-Transaction .cars-recent-transactions .car-4 .image.container .main .content .card-2  .Recent-Transaction .cars-recent-transactions .car-5 .image.container
+{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+

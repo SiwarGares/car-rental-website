@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>car-rent</title>
+    <link rel="stylesheet" href="styless.css">
+
+</head>
+
+
+<body>
+    <header> 
+        <div class="logo">
+            <h1>MORENT</h1>
+        </div>
+        
+        <nav class="navigation">
+            <div class="search">
+                <img src="assets/search.svg" alt="">
+                <p>Search something here</p>
+                <img src="assets/filter.png" alt="">
+
+            </div>
+
+            <div   class="icons" >
+                <img src="assets/Like.svg" alt="">
+                <img src="assets/notification.svg" alt="">
+                <img src="assets/setting-2.svg" alt="">
+                <img src="assets/profil.png" alt="">
+
+            </div>
+            
+            
+        </nav>
+
+       
+    </header>
+
+
+
+<section class="main">
+
+        <div class="sidebar">
+           <p>MAIN  MENU</p>
+           <button><img src="assets/home.png" alt=""> Dashboard</button>
+
+           <div>
+            <img src="assets/car.png" alt="">
+            <p>Car Rent</p>
+           </div>
+
+           <div>
+            <img src="assets/chart.png" alt="">
+            <p>Insight</p>
+           </div>
+
+           <div>
+            <img src="assets/chart.png" alt="">
+            <p>Insight</p>
+           </div>
+
+           <div>
+            <img src="assets/wallet.png" alt="">
+            <p>Reimburse</p>
+           </div>
+
+           <div>
+            <img src="assets/message.png" alt="">
+            <p>Inbox</p>
+           </div>
+
+
+           <div>
+            <img src="assets/calendar.png" alt="">
+            <p>Calender</p>
+           </div>
+
+
+
+           <p>P R E F E R E N C E S</p>
+
+
+           <div>
+            <img src="assets/setting-2.svg" alt="">
+            <p>Settings</p>
+           </div>
+
+           <div>
+            <img src="assets/info-circle.png" alt="">
+            <p>Help & Center</p>
+           </div>
+
+           <div>
+            <img src="assets/briefcase.png" alt="">
+            <p>Dark Mode</p>
+          
+            <img src="assets/dark-mode.png" alt="">
+           </div>
+
+
+         <div>
+             <img src="assets/logout.png" alt="">
+             <p>Log Out</p>
+             
+         </div>
+       
+        </div>
+
+
+        <div class="content">
+
+       
+            <div class="card-1">
+                <div class="maps">
+                    <h3>Details Rental</h3>
+                    <img src="assets/Maps.png" alt="">
+                </div>
+
+                <div class="car-name">
+                    <img src="assets/voiture.png" alt="">
+                    <div class="text-container">
+                        <h2>Nissan GT - R</h2>
+                        <p>Sport Car</p>
+
+                    </div>
+
+                    <p>#9761</p>
+
+                </div>
+
+                <div class="rent-details">
+                    <div class="pick-up">
+                        <div class="pick-up-title">
+                            <img src="assets/Mark.png" alt="">
+                            <h4>Pick-Up</h4>
+                        </div>
+                    
+                            <form>
+
+                                <div class="form-group">
+                                    <label for="pickup-location">Locations:</label>
+                                    <select id="pickup-location" name="pickup-location">
+                                        <option value="M'saken">M'saken</option>
+                                        <option value="Sousse">Sousse</option>
+                                        <option value="tunis">Tunis</option>
+                                        <option value="Monastir">Monastir</option>
+                                    </select>
+                                </div>
+                                
+                        
+                                
+                                <div class="form-group">
+
+                                        <label for="pickup-date">Pick-Up Date:</label>
+                                        <input type="date" id="pickup-date" name="pickup-date">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="pickup-time">Pick-Up Time:</label>
+                                        <select id="pickup-time" name="pickup-time">
+                                            <option value="08:00">08:00 AM</option>
+                                            <option value="09:00">09:00 AM</option>
+                                            <option value="10:00">10:00 AM</option>
+                                            <option value="11:00">11:00 AM</option>
+                                            <option value="12:00">12:00 PM</option>
+                                            <option value="13:00">01:00 PM</option>
+                                            <option value="14:00">02:00 PM</option>
+                                            <option value="15:00">03:00 PM</option>
+                                            <option value="16:00">04:00 PM</option>
+                                            <option value="17:00">05:00 PM</option>
+                                            <option value="18:00">06:00 PM</option>
+                                            <option value="19:00">07:00 PM</option>
+                                            <option value="20:00">08:00 PM</option>
+                                        </select>
+                                </div>
+                                
+                    
+                    </div>
+
+
+
+                    <div class="drop-off">
+                        <div class="drop-off-title">
+                            <img src="assets/Mark.png" alt="">
+                            <h4>Drop-Off</h4>
+                        </div>
+                        
+                        
+                        <div class="form-group">
+                            <label for="dropoff-location">Locations:</label>
+                            <select id="dropoff-location" name="dropoff-location">
+                                <option value="airport">M'saken</option>
+                                <option value="downtown">Sousse</option>
+                            </select>
+                        </div>
+                       
+
+                    
+                        <div class="form-group">
+                            <label for="dropoff-date">Drop-Off Date:</label>
+                            <input type="date" id="dropoff-date" name="dropoff-date">
+                        </div>
+                        
+
+                        
+                        <div class="form-group">
+                            <label for="dropoff-time">Drop-Off Time:</label>
+                            <select id="dropoff-time" name="dropoff-time">
+                                <option value="08:00">08:00 AM</option>
+                                <option value="09:00">09:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">01:00 PM</option>
+                                <option value="14:00">02:00 PM</option>
+                                <option value="15:00">03:00 PM</option>
+                                <option value="16:00">04:00 PM</option>
+                                <option value="17:00">05:00 PM</option>
+                                <option value="18:00">06:00 PM</option>
+                                <option value="19:00">07:00 PM</option>
+                                <option value="20:00">08:00 PM</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+
+                
+
+                <div class="rental-price">
+                    <div class="text-container">
+                        <hr>
+                        <h1>Total Rental Price</h1>
+                        <p>Overall price and includes rental discount</p>
+                    
+                    </div>
+
+
+                    <div class="price">
+                        <h1>$80.00</h1>
+
+                    </div>
+                </div>
+
+               
+
+
+                
+            </div>
+       
+
+            <div class="card-2">
+
+                <div class="chart-container">
+
+
+                    <div class="title-container">
+                        <h1>Top 5 Car Rental </h1>
+                        <img src="assets/more.png" alt="">
+                        <img src="assets/chart-circle.png" alt="">
+
+                    </div>
+
+                    <div class="chart-details">
+                        <div class="cars-types">
+                            <div class="type-1">
+                                <img src="assets/Mark-2.png" alt="">
+                                <p>Sport Car</p>
+                                <p>17,439</p>
+                            </div>
+                            <div class="type-2">
+                                <img src="assets/Mark-3.png" alt="">
+                                <p>SUV</p>
+                                <p>9,478</p>
+                            </div>
+                            <div class="type-3">
+                                <img src="assets/Mark-4.png" alt="">
+                                <p>Coupe</p>
+                                <p>18,197</p>
+                            </div>
+                            <div class="type-4">
+                                <img src="assets/Mark-5.png" alt="">
+                                <p>Hatchback</p>
+                                <p>12,510</p>
+                            </div>
+                            <div class="type-5">
+                                <img src="assets/Mark-6.png" alt="">
+                                <p>MPV</p>
+                                <p>14,406</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                    <div class="Recent-Transaction">
+                        <div class="title-container">
+                            <h1>Recent Transaction</h1>
+                            <a href="all-items.html">View All</a>
+
+                        </div>
+                        <div class="cars-recent-transactions">
+                            <div class="car-1">
+                                <div class="image-container">
+                                    <img src="assets/voiture-1.png" alt="">
+                                    <div class="text-container">
+                                        <p>Nissan GT - R</p>
+                                        <p>Sport Car</p>
+                                    </div>
+
+                                    <div class="car-price">
+                                        <p>20 July</p>
+                                        <p>$80.00</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="car-2">
+                                <div class="image-container">
+                                    <img src="assets/voiture-2.png" alt="">
+                                    <div class="text-container">
+                                        <p>Koegnigsegg</p>
+                                        <p>Sport Car</p>
+                                    </div>
+
+                                    <div class="car-price">
+                                        <p>20 July</p>
+                                        <p>$99.00</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="car-3">
+                                <div class="image-container">
+                                    <img src="assets/voiture-2.png" alt="">
+                                    <div class="text-container">
+                                        <p>Rolls - Royce</p>
+                                        <p>Sport Car</p>
+                                    </div>
+
+                                    <div class="car-price">
+                                        <p>20 July</p>
+                                        <p>$96.00</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="car-4">
+                                <div class="image-container">
+                                    <img src="assets/voiture-2.png" alt="">
+                                    <div class="text-container">
+                                        <p>CR - V</p>
+                                        <p>Sport Car</p>
+                                    </div>
+
+                                    <div class="car-price">
+                                        <p>20 July</p>
+                                        <p>$80.00</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+         </div>    
+        </div>
+     </div>
+
+</section>
+
+</body>
+
+</html>
