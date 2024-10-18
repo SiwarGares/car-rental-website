@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>car-rent</title>
     <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -13,7 +14,11 @@
     <header> 
         <div class="logo">
             <h1>MORENT</h1>
+            
         </div>
+
+        <i class="fa fa-bars" id="menu-toggle"></i>
+
         
         <nav class="navigation">
             <div class="search">
@@ -22,7 +27,6 @@
                 <img src="assets/filter.png" alt="">
 
             </div>
-
             <div   class="icons" >
                 <img src="assets/Like.svg" alt="">
                 <img src="assets/notification.svg" alt="">
@@ -41,8 +45,34 @@
 
 <section class="main">
 
-        <div class="sidebar">
-           <p>MAIN  MENU</p>
+
+
+    <div class="sidebar">
+        <div class="top">
+            <p>MAIN MENU</p>
+            <i class="fa-solid fa-bars" id="btn"></i>
+        </div>
+        <button><img src="assets/home.png" alt=""> <span class="menu-text">Dashboard</span> <span class="hover-text">Dashboard</span></button>
+            <div><img src="assets/car.png" alt=""> <span class="menu-text">Car Rent</span> <span class="hover-text">Car Rent</span></div>
+            <div><img src="assets/chart.png" alt=""> <span class="menu-text">Insight</span> <span class="hover-text">Insight</span></div>
+            <div><img src="assets/wallet.png" alt=""> <span class="menu-text">Reimburse</span> <span class="hover-text">Reimburse</span></div>
+            <div><img src="assets/message.png" alt=""> <span class="menu-text">Inbox</span> <span class="hover-text">Inbox</span></div>
+            <div><img src="assets/calendar.png" alt=""> <span class="menu-text">Calendar</span> <span class="hover-text">Calendar</span></div>
+            <p>PREFERENCES</p>
+            <div><img src="assets/setting-2.svg" alt=""> <span class="menu-text">Settings</span> <span class="hover-text">Settings</span></div>
+            <div><img src="assets/info-circle.png" alt=""> <span class="menu-text">Help & Center</span> <span class="hover-text">Help & Center</span></div>
+            <div><img src="assets/briefcase.png" alt=""> <span class="menu-text">Dark Mode</span> <span class="hover-text">Dark Mode</span></div>
+            <div id="log-out"><img src="assets/logout.png" alt=""> <span class="menu-text">Log Out</span> <span class="hover-text">Log Out</span></div>
+    </div>
+
+
+      <!--   <div class="sidebar">
+
+            <div class="top">
+                 <p>MAIN  MENU</p>
+                 <i class="fa-solid fa-bars" id="btn"></i>
+            </div>
+          
            <button><img src="assets/home.png" alt=""> Dashboard</button>
 
            <div>
@@ -104,8 +134,19 @@
              <p>Log Out</p>
              
          </div>
-       
+
+          <div class="main-content">
+            <div class="container">
+
+            </div>
+         </div> --> 
+
+
+        <!--  <div class="sidebar-toggle">
+            <i class="fa-solid fa-bars" id="btnToggle"></i>
         </div>
+       
+        </div> -->
 
 
         <div class="content">
@@ -229,11 +270,14 @@
                 </div>
 
 
+                <!-- <div class="horizontal-line">
+                    <hr>
+                </div> -->
                 
 
                 <div class="rental-price">
                     <div class="text-container">
-                        <hr>
+                        
                         <h1>Total Rental Price</h1>
                         <p>Overall price and includes rental discount</p>
                     
@@ -298,7 +342,9 @@
                     </div>
                 </div>
 
+                
 
+                
                     <div class="Recent-Transaction">
                         <div class="title-container">
                             <h1>Recent Transaction</h1>
@@ -329,7 +375,7 @@
                                 <div class="image-container" id="car-1">
                                     <img src="assets/voiture-2.png" alt="">
                                     <div class="text-container">
-                                        <p>Koegnigsegg</p>
+                                        <h3>Koegnigsegg</h3>
                                         <p>Sport Car</p>
                                     </div>
 
@@ -346,7 +392,7 @@
                                 <div class="image-container" id="car-1">
                                     <img src="assets/voiture-3.png" alt="">
                                     <div class="text-container">
-                                        <p>Rolls - Royce</p>
+                                        <h3>Rolls - Royce</h3>
                                         <p>Sport Car</p>
                                     </div>
 
@@ -364,7 +410,7 @@
                                 <div class="image-container" id="car-1">
                                     <img src="assets/voiture-4.png" alt="">
                                     <div class="text-container">
-                                        <p>CR - V</p>
+                                        <h3>CR - V</h3>
                                         <p>Sport Car</p>
                                     </div>
 
@@ -381,10 +427,10 @@
 
                     </div>
 
-
-
-
                 </div>
+
+
+             
 
             </div>
 
@@ -393,6 +439,11 @@
      </div>
 
 </section>
+
+
+<script src="app.js"></script>
+
+
 
 </body>
 
